@@ -323,10 +323,15 @@ a {
 	background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 248, 238, 0.9));
 	padding: 1rem;
 	border: 1px solid rgba(221, 206, 184, 0.8);
+	display: grid;
+	place-items: center;
+	min-height: 430px;
 }
 
 .hero__visual img {
-	width: 100%;
+	width: min(100%, 520px);
+	aspect-ratio: 1 / 1;
+	object-fit: contain;
 	background: #fffdf8;
 }
 
@@ -862,6 +867,7 @@ a {
 
 	.hero-frame {
 		padding: 0.75rem;
+		min-height: auto;
 	}
 
 	.stat-card,
