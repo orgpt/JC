@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 	const modal = document.querySelector('.jc-modal');
 	const modalContent = modal ? modal.querySelector('.jc-modal__content') : null;
+	const menuToggle = document.querySelector('.mobile-menu-toggle');
+	const mobileNav = document.querySelector('.main-nav');
 
 	const closeModal = () => {
 		if (!modal) {
@@ -41,5 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
 			closeModal();
 		}
 	});
-});
 
+	if (menuToggle && mobileNav) {
+		menuToggle.addEventListener('click', () => {
+			const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+			menuToggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+			menuToggle.classList.toggle('is-open', !isOpen);
+			mobileNav.classList.toggle('is-open', !isOpen);
+		});
+	}
+});
