@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+	<title>Junior Chic WooCommerce Demo</title>
+	<link>https://juniorchic.store</link>
+	<description>Starter categories and products for Junior Chic.</description>
+	<language>ar</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:term>
+		<wp:term_id>201</wp:term_id>
+		<wp:term_taxonomy>product_cat</wp:term_taxonomy>
+		<wp:term_slug>t-shirts</wp:term_slug>
+		<wp:term_name><![CDATA[T-Shirts]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>202</wp:term_id>
+		<wp:term_taxonomy>product_cat</wp:term_taxonomy>
+		<wp:term_slug>sets</wp:term_slug>
+		<wp:term_name><![CDATA[Sets]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>203</wp:term_id>
+		<wp:term_taxonomy>product_cat</wp:term_taxonomy>
+		<wp:term_slug>shoes</wp:term_slug>
+		<wp:term_name><![CDATA[Shoes]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>204</wp:term_id>
+		<wp:term_taxonomy>pa_age-group</wp:term_taxonomy>
+		<wp:term_slug>0-2</wp:term_slug>
+		<wp:term_name><![CDATA[0-2]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>205</wp:term_id>
+		<wp:term_taxonomy>pa_age-group</wp:term_taxonomy>
+		<wp:term_slug>3-5</wp:term_slug>
+		<wp:term_name><![CDATA[3-5]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>206</wp:term_id>
+		<wp:term_taxonomy>pa_gender</wp:term_taxonomy>
+		<wp:term_slug>unisex</wp:term_slug>
+		<wp:term_name><![CDATA[Unisex]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>207</wp:term_id>
+		<wp:term_taxonomy>pa_gender</wp:term_taxonomy>
+		<wp:term_slug>girls</wp:term_slug>
+		<wp:term_name><![CDATA[Girls]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>208</wp:term_id>
+		<wp:term_taxonomy>pa_size</wp:term_taxonomy>
+		<wp:term_slug>2y</wp:term_slug>
+		<wp:term_name><![CDATA[2Y]]></wp:term_name>
+	</wp:term>
+	<wp:term>
+		<wp:term_id>209</wp:term_id>
+		<wp:term_taxonomy>pa_size</wp:term_taxonomy>
+		<wp:term_slug>4y</wp:term_slug>
+		<wp:term_name><![CDATA[4Y]]></wp:term_name>
+	</wp:term>
+	<item>
+		<title>Pastel Stripe Tee</title>
+		<link>https://juniorchic.store/product/pastel-stripe-tee</link>
+		<pubDate>Sat, 26 Apr 2026 00:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">jc-product-301</guid>
+		<content:encoded><![CDATA[
+			<p>Soft striped tee for everyday comfort with pastel tones and easy pairing.</p>
+		]]></content:encoded>
+		<wp:post_id>301</wp:post_id>
+		<wp:post_date>2026-04-26 00:00:00</wp:post_date>
+		<wp:post_type>product</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>pastel-stripe-tee</wp:post_name>
+		<category domain="product_cat" nicename="t-shirts"><![CDATA[T-Shirts]]></category>
+		<category domain="pa_age-group" nicename="3-5"><![CDATA[3-5]]></category>
+		<category domain="pa_gender" nicename="unisex"><![CDATA[Unisex]]></category>
+		<category domain="pa_size" nicename="4y"><![CDATA[4Y]]></category>
+		<wp:postmeta><wp:meta_key>_regular_price</wp:meta_key><wp:meta_value>349</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_price</wp:meta_key><wp:meta_value>349</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_stock_status</wp:meta_key><wp:meta_value>instock</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_featured</wp:meta_key><wp:meta_value>yes</wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>Blush Hoodie Set</title>
+		<link>https://juniorchic.store/product/blush-hoodie-set</link>
+		<pubDate>Sat, 26 Apr 2026 00:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">jc-product-302</guid>
+		<content:encoded><![CDATA[
+			<p>Cozy pastel set with a hoodie and matching skirt for quick outfit styling.</p>
+		]]></content:encoded>
+		<wp:post_id>302</wp:post_id>
+		<wp:post_date>2026-04-26 00:00:00</wp:post_date>
+		<wp:post_type>product</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>blush-hoodie-set</wp:post_name>
+		<category domain="product_cat" nicename="sets"><![CDATA[Sets]]></category>
+		<category domain="pa_age-group" nicename="3-5"><![CDATA[3-5]]></category>
+		<category domain="pa_gender" nicename="girls"><![CDATA[Girls]]></category>
+		<category domain="pa_size" nicename="4y"><![CDATA[4Y]]></category>
+		<wp:postmeta><wp:meta_key>_regular_price</wp:meta_key><wp:meta_value>599</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_sale_price</wp:meta_key><wp:meta_value>499</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_price</wp:meta_key><wp:meta_value>499</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_stock_status</wp:meta_key><wp:meta_value>instock</wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>Soft Step Sneakers</title>
+		<link>https://juniorchic.store/product/soft-step-sneakers</link>
+		<pubDate>Sat, 26 Apr 2026 00:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">jc-product-303</guid>
+		<content:encoded><![CDATA[
+			<p>Lightweight sneakers for active little days with a clean pastel finish.</p>
+		]]></content:encoded>
+		<wp:post_id>303</wp:post_id>
+		<wp:post_date>2026-04-26 00:00:00</wp:post_date>
+		<wp:post_type>product</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>soft-step-sneakers</wp:post_name>
+		<category domain="product_cat" nicename="shoes"><![CDATA[Shoes]]></category>
+		<category domain="pa_age-group" nicename="0-2"><![CDATA[0-2]]></category>
+		<category domain="pa_gender" nicename="unisex"><![CDATA[Unisex]]></category>
+		<category domain="pa_size" nicename="2y"><![CDATA[2Y]]></category>
+		<wp:postmeta><wp:meta_key>_regular_price</wp:meta_key><wp:meta_value>429</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_price</wp:meta_key><wp:meta_value>429</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_stock_status</wp:meta_key><wp:meta_value>instock</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_stock</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key>_manage_stock</wp:meta_key><wp:meta_value>yes</wp:meta_value></wp:postmeta>
+	</item>
+</channel>
+</rss>
+
