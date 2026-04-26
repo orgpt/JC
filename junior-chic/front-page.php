@@ -69,7 +69,7 @@ get_header();
 
 <section class="section section--soft">
 	<div class="container">
-		<div class="section-heading">
+		<div class="section-heading section-heading--catalog">
 			<div>
 				<span class="eyebrow"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'فلترة أذكى' : 'Smarter filters'); ?></span>
 				<h2><?php echo esc_html(junior_chic_is_arabic_locale() ? 'اختاري بسهولة حسب العمر والنوع والمقاس واللون والسعر' : 'Find the right fit by age, style, size, color, and price'); ?></h2>
@@ -110,14 +110,14 @@ get_header();
 	<div class="offer-grid">
 		<div class="promo-card">
 			<span class="eyebrow"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'عروض التنسيق' : 'Styled bundles'); ?></span>
-			<h2><?php echo esc_html(junior_chic_is_arabic_locale() ? 'كملي الإطلالة بالكامل بسعر أفضل واختيار أسهل' : 'Complete the look with better value and easier choices'); ?></h2>
-			<p><?php echo esc_html(junior_chic_is_arabic_locale() ? 'عروض التنسيق تساعد العميل على شراء القطع المكملة معًا في طلب واحد، مع تجربة أسرع ومتوسط سلة أعلى.' : 'Bundle moments make it easier to shop matching pieces together while boosting order value naturally.'); ?></p>
+			<h2><?php echo esc_html(junior_chic_is_arabic_locale() ? 'لوك متكامل بتنسيق أسهل وسعر أوفر' : 'Complete the look with easier styling and better value'); ?></h2>
+			<p><?php echo esc_html(junior_chic_is_arabic_locale() ? 'اختاري القطع المكملة معًا في طلب واحد لتجربة أسرع وإطلالة منسقة بدون مجهود.' : 'Shop matching pieces together for a faster experience and a more polished look.'); ?></p>
 			<a class="btn btn--primary" href="<?php echo esc_url(home_url('/shop/')); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'اكتشفي العروض' : 'Explore offers'); ?></a>
 		</div>
 		<div class="promo-card promo-card--accent promo-card--countdown">
 			<span class="eyebrow"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'لفترة محدودة' : 'Limited-time offers'); ?></span>
-			<h2><?php echo esc_html(junior_chic_is_arabic_locale() ? 'عروض مدروسة تشجع على القرار السريع بدون تعقيد' : 'Campaigns designed to encourage faster decisions'); ?></h2>
-			<p><?php echo esc_html(junior_chic_is_arabic_locale() ? 'استخدمي هذا القسم لإبراز الكوبونات والعروض المحدودة والخصومات الموسمية بطريقة واضحة ومحفزة.' : 'Use this space to highlight coupons, limited-time drops, and seasonal promotions with clarity.'); ?></p>
+			<h2><?php echo esc_html(junior_chic_is_arabic_locale() ? 'خصومات محدودة بوقت واضح وفرصة لا تتكرر' : 'Limited-time savings with a clear reason to act'); ?></h2>
+			<p><?php echo esc_html(junior_chic_is_arabic_locale() ? 'أبرزي العروض الموسمية والكوبونات والخصومات المحدودة بطريقة واضحة تشجع على الشراء السريع.' : 'Highlight seasonal deals, coupons, and short-term discounts in a clear, high-converting way.'); ?></p>
 			<div class="countdown-strip">
 				<span><b>02</b><small><?php echo esc_html(junior_chic_is_arabic_locale() ? 'يوم' : 'Days'); ?></small></span>
 				<span><b>14</b><small><?php echo esc_html(junior_chic_is_arabic_locale() ? 'ساعة' : 'Hours'); ?></small></span>
@@ -136,7 +136,7 @@ get_header();
 				<h2><?php echo esc_html(junior_chic_is_arabic_locale() ? 'بلوكات بيع جاهزة تساعد العميل يكتشف الأفضل بسرعة' : 'Conversion-friendly blocks that surface what shoppers want most'); ?></h2>
 			</div>
 		</div>
-		<div class="product-blocks">
+		<div class="product-blocks product-blocks--stacked">
 			<div class="products-panel">
 				<h3><?php echo esc_html(junior_chic_is_arabic_locale() ? 'الأكثر مبيعًا' : 'Best sellers'); ?></h3>
 				<?php echo do_shortcode('[best_selling_products limit="4" columns="4"]'); ?>

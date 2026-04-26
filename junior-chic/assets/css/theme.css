@@ -276,7 +276,7 @@ a {
 .promo-card h2,
 .shop-hero h1 {
 	font-size: clamp(2rem, 3.3vw, 3.5rem);
-	max-width: 12ch;
+	max-width: 16ch;
 }
 
 .hero__content p,
@@ -501,6 +501,11 @@ a {
 	background: linear-gradient(135deg, rgba(139, 188, 192, 0.24), rgba(239, 143, 117, 0.16));
 }
 
+.promo-card h2 {
+	font-size: clamp(1.7rem, 2.8vw, 2.95rem);
+	max-width: 11ch;
+}
+
 .promo-card--countdown p {
 	max-width: 34rem;
 }
@@ -658,6 +663,17 @@ a {
 .product-blocks {
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	margin-top: 2rem;
+}
+
+.section-heading--catalog h2 {
+	font-size: clamp(1.7rem, 2.7vw, 2.85rem);
+	max-width: 20ch;
+	line-height: 1.22;
+}
+
+.product-blocks--stacked {
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
 }
 
 .products-panel .products {
@@ -838,8 +854,15 @@ a {
 
 	.hero__content h1,
 	.section-heading h2,
-	.promo-card h2,
 	.shop-hero h1 {
+		max-width: none;
+	}
+
+	.section-heading--catalog h2 {
+		max-width: none;
+	}
+
+	.promo-card h2 {
 		max-width: none;
 	}
 
@@ -848,9 +871,16 @@ a {
 	}
 
 	.section-heading h2,
-	.promo-card h2,
 	.shop-hero h1 {
 		font-size: clamp(1.75rem, 7vw, 2.55rem);
+	}
+
+	.section-heading--catalog h2 {
+		font-size: clamp(1.5rem, 6vw, 2.1rem);
+	}
+
+	.promo-card h2 {
+		font-size: clamp(1.55rem, 6vw, 2.15rem);
 	}
 
 	.category-grid,
