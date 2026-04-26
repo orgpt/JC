@@ -23,7 +23,7 @@ if (! defined('ABSPATH')) {
 			</div>
 		</div>
 
-		<nav class="main-nav" aria-label="<?php esc_attr_e('Primary navigation', 'junior-chic'); ?>">
+		<nav class="main-nav" aria-label="<?php echo esc_attr(junior_chic_is_arabic_locale() ? 'التنقل الرئيسي' : __('Primary navigation', 'junior-chic')); ?>">
 			<?php
 			wp_nav_menu(array(
 				'theme_location' => 'primary',
@@ -35,12 +35,11 @@ if (! defined('ABSPATH')) {
 		</nav>
 
 		<div class="header-actions">
-			<a class="header-pill" href="<?php echo esc_url(home_url('/shop/')); ?>"><?php esc_html_e('Shop Now', 'junior-chic'); ?></a>
+			<a class="header-pill" href="<?php echo esc_url(home_url('/shop/')); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'تسوق الآن' : __('Shop Now', 'junior-chic')); ?></a>
 			<?php if (function_exists('WC')) : ?>
-				<a class="header-cart" href="<?php echo esc_url(wc_get_cart_url()); ?>"><?php esc_html_e('Cart', 'junior-chic'); ?></a>
+				<a class="header-cart" href="<?php echo esc_url(wc_get_cart_url()); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'السلة' : __('Cart', 'junior-chic')); ?></a>
 			<?php endif; ?>
 		</div>
 	</div>
 </header>
 <main id="primary" class="site-main">
-

@@ -5,6 +5,27 @@ if (! defined('ABSPATH')) {
 
 define('JUNIOR_CHIC_VERSION', '1.0.0');
 
+function junior_chic_is_arabic_locale() {
+	$locale = determine_locale();
+	return strpos($locale, 'ar') === 0;
+}
+
+function junior_chic_force_frontend_arabic_locale($locale) {
+	if (is_admin()) {
+		return $locale;
+	}
+
+	$site_language = get_option('WPLANG');
+
+	if (empty($site_language) || $site_language === 'en_US') {
+		return 'ar';
+	}
+
+	return $locale;
+}
+add_filter('locale', 'junior_chic_force_frontend_arabic_locale', 1);
+add_filter('determine_locale', 'junior_chic_force_frontend_arabic_locale', 1);
+
 function junior_chic_setup() {
 	load_theme_textdomain('junior-chic', get_template_directory() . '/languages');
 
@@ -44,8 +65,8 @@ function junior_chic_enqueue_assets() {
 	wp_enqueue_script('junior-chic-theme', get_template_directory_uri() . '/assets/js/theme.js', array(), JUNIOR_CHIC_VERSION, true);
 
 	wp_localize_script('junior-chic-theme', 'juniorChicData', array(
-		'quickViewLabel' => __('Quick View', 'junior-chic'),
-		'closeLabel'     => __('Close', 'junior-chic'),
+		'quickViewLabel' => junior_chic_is_arabic_locale() ? 'عرض المنتج' : __('Quick View', 'junior-chic'),
+		'closeLabel'     => junior_chic_is_arabic_locale() ? 'إغلاق' : __('Close', 'junior-chic'),
 	));
 }
 add_action('wp_enqueue_scripts', 'junior_chic_enqueue_assets');
@@ -66,6 +87,7 @@ add_action('widgets_init', 'junior_chic_widgets_init');
 function junior_chic_body_classes($classes) {
 	$classes[] = is_rtl() ? 'is-rtl' : 'is-ltr';
 	$classes[] = 'junior-chic-theme';
+	$classes[] = junior_chic_is_arabic_locale() ? 'is-arabic' : 'is-not-arabic';
 	return $classes;
 }
 add_filter('body_class', 'junior_chic_body_classes');
