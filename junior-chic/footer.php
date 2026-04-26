@@ -8,10 +8,10 @@ if (! defined('ABSPATH')) {
 	<div class="container site-footer__grid">
 		<div>
 			<h3><?php bloginfo('name'); ?></h3>
-			<p><?php echo esc_html(junior_chic_is_arabic_locale() ? 'ملابس أطفال بألوان باستيل ورسومات لطيفة وتجربة تسوق سريعة ومريحة على الموبايل.' : __('Kidswear with pastel colors, playful illustrations, and a fast mobile shopping experience.', 'junior-chic')); ?></p>
+			<p><?php echo esc_html(junior_chic_is_arabic_locale() ? 'براند أطفال يجمع بين الأناقة والراحة وسهولة الاختيار، مع تجربة تسوق مريحة تناسب الأهل من أول زيارة حتى إتمام الطلب.' : __('A kidswear brand built around comfort, style, and a frictionless shopping experience.', 'junior-chic')); ?></p>
 		</div>
 		<div>
-			<h3><?php echo esc_html(junior_chic_is_arabic_locale() ? 'روابط سريعة' : __('Quick links', 'junior-chic')); ?></h3>
+			<h3><?php echo esc_html(junior_chic_is_arabic_locale() ? 'روابط مهمة' : __('Quick links', 'junior-chic')); ?></h3>
 			<?php
 			wp_nav_menu(array(
 				'theme_location' => 'footer',
@@ -22,11 +22,11 @@ if (! defined('ABSPATH')) {
 			?>
 		</div>
 		<div>
-			<h3><?php echo esc_html(junior_chic_is_arabic_locale() ? 'تحتاج مساعدة؟' : __('Need help?', 'junior-chic')); ?></h3>
+			<h3><?php echo esc_html(junior_chic_is_arabic_locale() ? 'خدمة العملاء' : __('Need help?', 'junior-chic')); ?></h3>
 			<ul class="footer-list">
-				<li><a href="https://wa.me/201000000000"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'واتساب مباشر' : __('WhatsApp Direct', 'junior-chic')); ?></a></li>
-				<li><a href="<?php echo esc_url(home_url('/shipping-returns/')); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'الشحن والاستبدال' : __('Shipping & Returns', 'junior-chic')); ?></a></li>
-				<li><a href="<?php echo esc_url(home_url('/about-us/')); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'عن البراند' : __('About the Brand', 'junior-chic')); ?></a></li>
+				<li><a href="https://wa.me/201000000000"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'اطلبي أو استفسري عبر واتساب' : __('WhatsApp Direct', 'junior-chic')); ?></a></li>
+				<li><a href="<?php echo esc_url(home_url('/shipping-returns/')); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'سياسة الشحن والاستبدال' : __('Shipping & Returns', 'junior-chic')); ?></a></li>
+				<li><a href="<?php echo esc_url(home_url('/about-us/')); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'تعرفي على البراند' : __('About the Brand', 'junior-chic')); ?></a></li>
 			</ul>
 		</div>
 	</div>

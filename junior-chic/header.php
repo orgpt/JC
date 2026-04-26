@@ -35,9 +35,9 @@ if (! defined('ABSPATH')) {
 		</nav>
 
 		<div class="header-actions">
-			<a class="header-pill" href="<?php echo esc_url(home_url('/shop/')); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'تسوق الآن' : __('Shop Now', 'junior-chic')); ?></a>
+			<a class="header-pill" href="<?php echo esc_url(home_url('/shop/')); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'ابدئي التسوق الآن' : __('Shop Now', 'junior-chic')); ?></a>
 			<?php if (function_exists('WC')) : ?>
-				<a class="header-cart" href="<?php echo esc_url(wc_get_cart_url()); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'السلة' : __('Cart', 'junior-chic')); ?></a>
+				<a class="header-cart" href="<?php echo esc_url(wc_get_cart_url()); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'سلة الطلبات' : __('Cart', 'junior-chic')); ?></a>
 			<?php endif; ?>
 		</div>
 	</div>

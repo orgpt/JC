@@ -6,16 +6,16 @@ get_header('shop');
 <section class="shop-hero">
 	<div class="container shop-hero__inner">
 		<div>
-			<span class="eyebrow"><?php esc_html_e('Junior Chic Shop', 'junior-chic'); ?></span>
+			<span class="eyebrow"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'تسوقي من Junior Chic' : __('Junior Chic Shop', 'junior-chic')); ?></span>
 			<h1><?php woocommerce_page_title(); ?></h1>
-			<p><?php esc_html_e('Clear filters, large imagery, and a mobile-first buying flow for parents shopping fast.', 'junior-chic'); ?></p>
+			<p><?php echo esc_html(junior_chic_is_arabic_locale() ? 'اكتشفي منتجات مختارة بعناية مع فلترة واضحة وصور كبيرة وتجربة تسوق سريعة تناسب الأهل وتختصر وقت الاختيار.' : __('Clear filters, large imagery, and a mobile-first buying flow for parents shopping fast.', 'junior-chic')); ?></p>
 		</div>
 		<div class="shop-hero__filters">
 			<a href="<?php echo esc_url(home_url('/shop/?filter_age-group=0-2')); ?>">0-2</a>
 			<a href="<?php echo esc_url(home_url('/shop/?filter_age-group=3-5')); ?>">3-5</a>
-			<a href="<?php echo esc_url(home_url('/shop/?filter_gender=boys')); ?>"><?php esc_html_e('Boys', 'junior-chic'); ?></a>
-			<a href="<?php echo esc_url(home_url('/shop/?filter_gender=girls')); ?>"><?php esc_html_e('Girls', 'junior-chic'); ?></a>
-			<a href="<?php echo esc_url(home_url('/shop/?filter_gender=unisex')); ?>"><?php esc_html_e('Unisex', 'junior-chic'); ?></a>
+			<a href="<?php echo esc_url(home_url('/shop/?filter_gender=boys')); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'ولاد' : __('Boys', 'junior-chic')); ?></a>
+			<a href="<?php echo esc_url(home_url('/shop/?filter_gender=girls')); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'بنات' : __('Girls', 'junior-chic')); ?></a>
+			<a href="<?php echo esc_url(home_url('/shop/?filter_gender=unisex')); ?>"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'يونيسكس' : __('Unisex', 'junior-chic')); ?></a>
 		</div>
 	</div>
 </section>
@@ -26,8 +26,8 @@ get_header('shop');
 			<?php dynamic_sidebar('shop-sidebar'); ?>
 		<?php else : ?>
 			<section class="widget shop-widget">
-				<h3 class="widget-title"><?php esc_html_e('Suggested widgets', 'junior-chic'); ?></h3>
-				<p><?php esc_html_e('Add WooCommerce layered nav for age, gender, size, and color, plus filter by price.', 'junior-chic'); ?></p>
+				<h3 class="widget-title"><?php echo esc_html(junior_chic_is_arabic_locale() ? 'فلترة مقترحة' : __('Suggested widgets', 'junior-chic')); ?></h3>
+				<p><?php echo esc_html(junior_chic_is_arabic_locale() ? 'أضيفي فلاتر العمر والنوع والمقاس واللون والسعر لتجربة تصفح أسرع وتحويل أعلى.' : __('Add WooCommerce layered nav for age, gender, size, and color, plus filter by price.', 'junior-chic')); ?></p>
 			</section>
 		<?php endif; ?>
 	</aside>
@@ -59,4 +59,3 @@ get_header('shop');
 </section>
 <?php
 get_footer('shop');
-
