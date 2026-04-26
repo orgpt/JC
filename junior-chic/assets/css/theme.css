@@ -1,4 +1,6 @@
 :root {
+	--jc-font-body: "Cairo", "Segoe UI", Tahoma, Arial, sans-serif;
+	--jc-font-display: "Baloo Bhaijaan 2", "Cairo", "Segoe UI", Tahoma, Arial, sans-serif;
 	--jc-ink: #195d74;
 	--jc-coral: #ef8f75;
 	--jc-coral-deep: #df7359;
@@ -29,7 +31,8 @@ html {
 
 body {
 	margin: 0;
-	font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+	font-family: var(--jc-font-body);
+	font-size: 16px;
 	background:
 		radial-gradient(circle at 10% 10%, rgba(239, 143, 117, 0.16), transparent 22%),
 		radial-gradient(circle at 92% 12%, rgba(139, 188, 192, 0.2), transparent 18%),
@@ -40,7 +43,7 @@ body {
 }
 
 body.is-arabic {
-	font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+	font-family: var(--jc-font-body);
 }
 
 img {
@@ -115,13 +118,17 @@ a {
 
 .site-title {
 	display: inline-block;
-	font-size: 1.15rem;
+	font-family: var(--jc-font-display);
+	font-size: 1.35rem;
+	line-height: 1.1;
+	letter-spacing: 0.01em;
 	font-weight: 800;
 }
 
 .site-tagline {
 	margin: 0.2rem 0 0;
-	font-size: 0.92rem;
+	font-size: 0.88rem;
+	line-height: 1.6;
 	color: rgba(25, 93, 116, 0.78);
 }
 
@@ -245,24 +252,39 @@ a {
 	border-radius: 999px;
 	background: rgba(139, 188, 192, 0.18);
 	color: var(--jc-ink);
-	font-size: 0.82rem;
+	font-size: 0.78rem;
 	font-weight: 800;
-	letter-spacing: 0.04em;
+	letter-spacing: 0.02em;
 }
 
 .hero__content h1,
 .section-heading h2,
 .promo-card h2,
 .shop-hero h1 {
-	font-size: clamp(2rem, 4vw, 3.7rem);
-	line-height: 1.08;
-	margin: 0.45rem 0 0.9rem;
+	font-family: var(--jc-font-display);
+	line-height: 1.14;
+	margin: 0.45rem 0 0.85rem;
+	letter-spacing: 0;
+}
+
+.hero__content h1 {
+	font-size: clamp(2.5rem, 4.8vw, 4.7rem);
+	max-width: 10.5ch;
+}
+
+.section-heading h2,
+.promo-card h2,
+.shop-hero h1 {
+	font-size: clamp(2rem, 3.3vw, 3.5rem);
+	max-width: 12ch;
 }
 
 .hero__content p,
 .promo-card p,
 .filter-card p,
 .category-card small {
+	font-size: 1rem;
+	line-height: 1.9;
 	color: rgba(25, 93, 116, 0.82);
 }
 
@@ -276,6 +298,10 @@ a {
 .jc-product-card__actions {
 	gap: 0.75rem;
 	flex-wrap: wrap;
+}
+
+.hero__content p {
+	max-width: 38rem;
 }
 
 .hero-frame,
@@ -310,7 +336,7 @@ a {
 	background: rgba(255, 255, 255, 0.94);
 	border-radius: 999px;
 	box-shadow: var(--jc-shadow-soft);
-	font-size: 0.92rem;
+	font-size: 0.86rem;
 	font-weight: 800;
 }
 
@@ -339,14 +365,16 @@ a {
 
 .stat-card strong {
 	display: block;
-	font-size: 1.25rem;
+	font-size: 1.35rem;
 	line-height: 1.1;
+	font-family: var(--jc-font-display);
 }
 
 .stat-card span {
 	display: block;
 	margin-top: 0.2rem;
-	font-size: 0.9rem;
+	font-size: 0.82rem;
+	line-height: 1.55;
 	color: rgba(25, 93, 116, 0.72);
 }
 
@@ -366,7 +394,7 @@ a {
 }
 
 .trust-strip__inner span {
-	font-size: 0.92rem;
+	font-size: 0.9rem;
 	font-weight: 700;
 	white-space: nowrap;
 }
@@ -389,7 +417,7 @@ a {
 
 .section-link {
 	padding-inline: 1rem;
-	font-size: 0.95rem;
+	font-size: 0.9rem;
 }
 
 .category-grid,
@@ -430,13 +458,17 @@ a {
 .widget-title,
 .page-title,
 .products-panel h3 {
-	font-size: 1.2rem;
+	font-family: var(--jc-font-display);
+	font-size: 1.45rem;
+	line-height: 1.25;
 	font-weight: 800;
 }
 
 .category-card small {
 	display: block;
 	margin-top: 0.45rem;
+	font-size: 0.95rem;
+	line-height: 1.7;
 }
 
 .category-card--tees {
@@ -479,13 +511,14 @@ a {
 }
 
 .countdown-strip b {
-	font-size: 1.3rem;
+	font-family: var(--jc-font-display);
+	font-size: 1.5rem;
 	line-height: 1;
 }
 
 .countdown-strip small {
 	margin-top: 0.25rem;
-	font-size: 0.78rem;
+	font-size: 0.75rem;
 	color: rgba(25, 93, 116, 0.7);
 }
 
@@ -557,15 +590,18 @@ a {
 .woocommerce div.product .stock,
 .page-meta {
 	color: rgba(25, 93, 116, 0.72);
-	font-size: 0.88rem;
+	font-size: 0.84rem;
 }
 
 .jc-product-card__body h2 {
-	font-size: 1.05rem;
+	font-family: var(--jc-font-display);
+	font-size: 1.3rem;
+	line-height: 1.28;
 	margin: 0.55rem 0;
 }
 
 .jc-product-card__price {
+	font-size: 1.05rem;
 	font-weight: 800;
 	margin-bottom: 0.8rem;
 }
@@ -674,6 +710,19 @@ a {
 	padding: 2rem 0 1rem;
 	background: rgba(139, 188, 192, 0.12);
 	border-top: 1px solid rgba(217, 199, 178, 0.7);
+}
+
+.site-footer h3 {
+	font-family: var(--jc-font-display);
+	font-size: 1.3rem;
+	margin: 0 0 0.8rem;
+}
+
+.site-footer p,
+.site-footer li,
+.site-footer a {
+	font-size: 0.95rem;
+	line-height: 1.8;
 }
 
 .site-footer__grid {
@@ -786,7 +835,17 @@ a {
 	.section-heading h2,
 	.promo-card h2,
 	.shop-hero h1 {
-		font-size: 1.95rem;
+		max-width: none;
+	}
+
+	.hero__content h1 {
+		font-size: clamp(2.2rem, 9vw, 3.15rem);
+	}
+
+	.section-heading h2,
+	.promo-card h2,
+	.shop-hero h1 {
+		font-size: clamp(1.75rem, 7vw, 2.55rem);
 	}
 
 	.category-grid,
@@ -815,7 +874,7 @@ a {
 	}
 
 	.site-title {
-		font-size: 1.05rem;
+		font-size: 1.15rem;
 	}
 
 	.site-tagline {

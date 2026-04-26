@@ -60,8 +60,9 @@ function junior_chic_woocommerce_layout_cleanup() {
 add_action('after_setup_theme', 'junior_chic_woocommerce_layout_cleanup');
 
 function junior_chic_enqueue_assets() {
+	wp_enqueue_style('junior-chic-fonts', 'https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap', array(), null);
 	wp_enqueue_style('junior-chic-style', get_stylesheet_uri(), array(), JUNIOR_CHIC_VERSION);
-	wp_enqueue_style('junior-chic-theme', get_template_directory_uri() . '/assets/css/theme.css', array('junior-chic-style'), JUNIOR_CHIC_VERSION);
+	wp_enqueue_style('junior-chic-theme', get_template_directory_uri() . '/assets/css/theme.css', array('junior-chic-style', 'junior-chic-fonts'), JUNIOR_CHIC_VERSION);
 	wp_enqueue_script('junior-chic-theme', get_template_directory_uri() . '/assets/js/theme.js', array(), JUNIOR_CHIC_VERSION, true);
 
 	wp_localize_script('junior-chic-theme', 'juniorChicData', array(
